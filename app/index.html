@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1f6f5c">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>Spanish Flashcards</title>
+<style>
+  :root {
+    --bg: #f6f4ef; --surface: #ffffff; --text: #1d1d1b; --muted: #6b6a66;
+    --accent: #1f6f5c; --accent-text: #ffffff; --border: #dedad2;
+    --frequent: #c2410c; --infrequent: #b48a00; --learned: #1f7a3a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161716; --surface: #222423; --text: #f1efe9; --muted: #a3a19b;
+      --accent: #3fae8e; --accent-text: #0d1512; --border: #3a3c3a;
+      --frequent: #f08a5d; --infrequent: #e6c14f; --learned: #5cc77e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 17px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex; flex-direction: column;
+    padding: env(safe-area-inset-top) 16px env(safe-area-inset-bottom);
+    max-width: 560px; margin: 0 auto;
+    -webkit-tap-highlight-color: transparent;
+  }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  header { display: flex; align-items: center; gap: 10px; padding: 12px 0; }
+  #progress { font-weight: 600; }
+  #unsynced { font-size: 13px; color: var(--frequent); flex: 1; }
+  #menuBtn { background: none; border: 1px solid var(--border); border-radius: 10px; padding: 6px 12px; }
+
+  main { flex: 1; display: flex; flex-direction: column; gap: 14px; padding-bottom: 16px; min-height: 0; }
+  #card {
+    flex: 1; min-height: 260px; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 18px; padding: 24px 20px; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center; gap: 14px; user-select: none;
+  }
+  #levelTag { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
+  #es { font-size: clamp(24px, 7vw, 34px); font-weight: 650; line-height: 1.25; overflow-wrap: anywhere; }
+  #hint { color: var(--muted); font-size: 15px; }
+  #answer { display: none; border-top: 1px solid var(--border); padding-top: 14px; width: 100%; }
+  #en { font-size: 22px; }
+  #en.missing { color: var(--muted); font-style: italic; font-size: 17px; }
+  .clue { margin-top: 10px; color: var(--muted); font-size: 16px; }
+  .clue::before { content: "Clue: "; font-weight: 600; }
+  .revealed #answer { display: block; }
+  .revealed #hint { display: none; }
+
+  .row { display: flex; gap: 8px; }
+  .row > button { flex: 1; }
+  .small { background: none; border: 1px solid var(--border); border-radius: 10px; padding: 9px 10px; font-size: 15px; }
+  .level { background: var(--surface); border: 2px solid var(--border); border-radius: 12px; padding: 10px 4px; font-size: 15px; }
+  .level.on[data-level=frequent] { border-color: var(--frequent); color: var(--frequent); font-weight: 700; }
+  .level.on[data-level=infrequent] { border-color: var(--infrequent); color: var(--infrequent); font-weight: 700; }
+  .level.on[data-level=learned] { border-color: var(--learned); color: var(--learned); font-weight: 700; }
+  #afterReveal { display: none; flex-direction: column; gap: 10px; }
+  .revealed-ui #afterReveal { display: flex; }
+  .primary { background: var(--accent); color: var(--accent-text); border: none; border-radius: 14px; padding: 16px; font-size: 19px; font-weight: 650; width: 100%; }
+  .label { font-size: 13px; color: var(--muted); text-align: center; }
+
+  dialog { border: none; border-radius: 18px; padding: 20px; width: min(92vw, 520px); background: var(--surface); color: var(--text); }
+  dialog::backdrop { background: rgba(0,0,0,.45); }
+  dialog h2 { margin: 0 0 10px; font-size: 20px; }
+  dialog ol, dialog ul { padding-left: 22px; margin: 8px 0; }
+  dialog li { margin: 6px 0; }
+  dialog .stack { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+  dialog .stack button { padding: 12px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); }
+  dialog textarea { width: 100%; min-height: 90px; font: inherit; padding: 10px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text); }
+  code { background: var(--bg); padding: 1px 5px; border-radius: 5px; font-size: 14px; overflow-wrap: anywhere; }
+  .counts { display: flex; gap: 8px; margin: 8px 0 4px; }
+  .counts div { flex: 1; text-align: center; background: var(--bg); border-radius: 10px; padding: 8px 4px; font-size: 13px; }
+  .counts b { display: block; font-size: 20px; }
+
+  #toast {
+    position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom)); transform: translateX(-50%);
+    background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-size: 15px;
+    opacity: 0; transition: opacity .2s; pointer-events: none; max-width: 90vw; text-align: center;
+  }
+  #toast.show { opacity: 1; }
+  #error { display: none; padding: 20px; background: var(--surface); border-radius: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <span id="progress">…</span>
+  <span id="unsynced"></span>
+  <button id="menuBtn" aria-label="Menu">☰ Menu</button>
+</header>
+
+<div id="error"></div>
+
+<main id="main">
+  <div id="card" role="button" tabindex="0" aria-label="Tap to reveal the English">
+    <div id="levelTag"></div>
+    <div id="es"></div>
+    <div id="hint">Tap the card to see the English</div>
+    <div id="answer">
+      <div id="en"></div>
+      <div id="clueAfter" class="clue" hidden></div>
+    </div>
+  </div>
+
+  <div class="row" id="preReveal">
+    <button class="small" id="showClueBtn" hidden>💡 Show clue</button>
+  </div>
+  <div id="clueBefore" class="clue" hidden></div>
+
+  <div id="afterReveal">
+    <div class="label">How often should this card come up?</div>
+    <div class="row">
+      <button class="level" data-level="frequent">Frequent</button>
+      <button class="level" data-level="infrequent">Infrequent</button>
+      <button class="level" data-level="learned">Learned</button>
+    </div>
+    <button class="small" id="editClueBtn">✎ Add clue</button>
+  </div>
+
+  <button class="primary" id="nextBtn">Next card →</button>
+</main>
+
+<div id="toast" role="status"></div>
+
+<dialog id="menu">
+  <h2>Menu</h2>
+  <div class="counts" id="counts"></div>
+  <div class="stack">
+    <button id="exportBtn">⬆ Send progress to my PC…</button>
+    <button id="newRoundBtn">↻ Start a new shuffled round</button>
+    <button id="helpBtn">? How to use</button>
+    <button id="closeMenu">Close</button>
+  </div>
+</dialog>
+
+<dialog id="help">
+  <h2>How to use</h2>
+  <ol>
+    <li><b>Read the Spanish</b> and try to remember the meaning.</li>
+    <li><b>Tap the card</b> to see the English (and the clue, if there is one).
+      If a card has a clue, you can tap <b>💡 Show clue</b> first for a hint.</li>
+    <li><b>Pick a level</b> if you want to change how often the card comes up:
+      <ul>
+        <li><b>Frequent</b>: about 3 times per round (new words start here)</li>
+        <li><b>Infrequent</b>: once per round</li>
+        <li><b>Learned</b>: about 1 round in 4</li>
+      </ul>
+      A level change applies from the next round.
+    </li>
+    <li><b>✎ Add clue</b> lets you write your own hint for a card.</li>
+    <li>Tap <b>Next card</b> to move on. Your place is saved, so you can close the app any time and carry on later.</li>
+  </ol>
+  <p>Levels and clues you set here are saved on this phone. To copy them into your word list on your PC,
+    use <b>Menu → Send progress to my PC</b> now and then. The header shows how many changes haven't been sent yet.</p>
+  <div class="stack"><button id="closeHelp">Got it</button></div>
+</dialog>
+
+<dialog id="exportDlg">
+  <h2>Send progress to your PC</h2>
+  <ol>
+    <li>Tap <b>Share file</b> below and send it to yourself (Google Drive, email, etc.).</li>
+    <li>On your PC, save it as <code>progress.json</code> in the <code>Spanish Flashcards</code> folder.</li>
+    <li>Open a terminal in that folder and run:<br><code>python flashcards.py import progress.json</code></li>
+    <li>Push to GitHub, as the command tells you. The app picks up the changes next time it opens.</li>
+  </ol>
+  <p id="exportCount"></p>
+  <div class="stack">
+    <button id="shareBtn">⬆ Share file</button>
+    <button id="downloadBtn">⬇ Download file instead</button>
+    <button id="copyBtn">⧉ Copy as text instead</button>
+    <button id="closeExport">Close</button>
+  </div>
+</dialog>
+
+<dialog id="clueDlg">
+  <h2>Your clue</h2>
+  <p class="label" style="text-align:left">A hint that helps you remember. Leave it empty to remove the clue.</p>
+  <textarea id="clueInput" maxlength="300"></textarea>
+  <div class="stack">
+    <button id="saveClue">Save clue</button>
+    <button id="cancelClue">Cancel</button>
+  </div>
+</dialog>
+
+<script>
+"use strict";
+const KEY = "spanish-flashcards-v1";
+const LEVELS = ["frequent", "infrequent", "learned"];
+const LEVEL_NAMES = { frequent: "Frequent", infrequent: "Infrequent", learned: "Learned" };
+const $ = (id) => document.getElementById(id);
+
+// ---------- saved state (this phone only) ----------
+function loadState() {
+  try {
+    const s = JSON.parse(localStorage.getItem(KEY));
+    if (s && Array.isArray(s.queue)) return s;
+  } catch (e) {}
+  return { queue: [], pos: 0, local: {}, lastExport: 0, seenHelp: false, lastCard: null };
+}
+let state = loadState();
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(state)); }
+  catch (e) { toast("Couldn't save progress on this phone"); }
+}
+
+let cards = {};       // id -> card from words.json (active only)
+let revealed = false;
+
+// The phone's change wins if it is newer than what the repo has.
+function levelOf(c) {
+  const l = state.local[c.id];
+  return l && l.level && l.level_changed_at > c.level_updated ? l.level : c.level;
+}
+function clueOf(c) {
+  const l = state.local[c.id];
+  return l && "clue" in l && l.clue_changed_at > c.clue_updated ? l.clue : c.clue;
+}
+
+// Drop local changes once the repo has caught up with them.
+function pruneLocal() {
+  for (const [id, l] of Object.entries(state.local)) {
+    const c = cards[id];
+    if (!c) continue;
+    if (l.level && l.level_changed_at <= c.level_updated) { delete l.level; delete l.level_changed_at; }
+    if ("clue" in l && l.clue_changed_at <= c.clue_updated) { delete l.clue; delete l.clue_changed_at; }
+    if (!Object.keys(l).length) delete state.local[id];
+  }
+}
+function changeTimes(l) { return [l.level_changed_at || 0, l.clue_changed_at || 0]; }
+function unsyncedCount() {
+  return Object.values(state.local).filter(l => Math.max(...changeTimes(l)) > state.lastExport).length;
+}
+
+// ---------- rounds ----------
+// Frequent: 3 copies, infrequent: 1, learned: 25% chance of 1. Copies are spread apart.
+function makeRound() {
+  const counts = {};
+  for (const c of Object.values(cards)) {
+    const lvl = levelOf(c);
+    const n = lvl === "frequent" ? 3 : lvl === "infrequent" ? 1 : (Math.random() < 0.25 ? 1 : 0);
+    if (n) counts[c.id] = n;
+  }
+  if (!Object.keys(counts).length) for (const id of Object.keys(cards)) counts[id] = 1;
+
+  const distinct = Object.keys(counts).length;
+  const gap = Math.min(8, distinct - 1);
+  const recent = state.lastCard ? [state.lastCard] : [];
+  const queue = [];
+  let left = Object.values(counts).reduce((a, b) => a + b, 0);
+  while (left > 0) {
+    let pool = Object.keys(counts).filter(id => counts[id] > 0 && !recent.includes(id));
+    if (!pool.length) pool = Object.keys(counts).filter(id => counts[id] > 0);
+    // weight by remaining copies, so frequent cards are spread through the whole round
+    let r = Math.random() * pool.reduce((a, id) => a + counts[id], 0);
+    let pick = pool[pool.length - 1];
+    for (const id of pool) { r -= counts[id]; if (r < 0) { pick = id; break; } }
+    queue.push(pick); counts[pick]--; left--;
+    recent.push(pick); if (recent.length > gap) recent.shift();
+  }
+  state.queue = queue; state.pos = 0;
+  save();
+}
+
+function currentId() {
+  // skip cards removed from the deck since this round was made
+  while (state.pos < state.queue.length && !cards[state.queue[state.pos]]) state.pos++;
+  if (state.pos >= state.queue.length) makeRound();
+  return state.queue[state.pos];
+}
+
+// ---------- rendering ----------
+function render() {
+  const id = currentId();
+  const c = cards[id];
+  const lvl = levelOf(c), clue = clueOf(c);
+  $("progress").textContent = `Card ${state.pos + 1} of ${state.queue.length}`;
+  const n = unsyncedCount();
+  $("unsynced").textContent = n ? `${n} unsent change${n > 1 ? "s" : ""}` : "";
+  $("levelTag").textContent = LEVEL_NAMES[lvl];
+  $("levelTag").style.color = `var(--${lvl})`;
+  $("es").textContent = c.es;
+  $("en").textContent = c.en || "(no translation yet)";
+  $("en").classList.toggle("missing", !c.en);
+  for (const el of [$("clueBefore"), $("clueAfter")]) el.textContent = clue || "";
+  $("clueAfter").hidden = !clue;
+  $("clueBefore").hidden = true;
+  $("showClueBtn").hidden = !clue || revealed;
+  $("editClueBtn").textContent = clue ? "✎ Edit clue" : "✎ Add clue";
+  $("card").classList.toggle("revealed", revealed);
+  $("main").classList.toggle("revealed-ui", revealed);
+  document.querySelectorAll(".level").forEach(b => b.classList.toggle("on", b.dataset.level === lvl));
+}
+
+function reveal() { if (!revealed) { revealed = true; render(); } }
+function next() {
+  state.lastCard = state.queue[state.pos];
+  state.pos++; revealed = false;
+  save(); render();
+  window.scrollTo(0, 0);
+}
+
+let toastTimer;
+function toast(msg) {
+  $("toast").textContent = msg; $("toast").classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => $("toast").classList.remove("show"), 1800);
+}
+
+function setLocal(id, fields) {
+  state.local[id] = Object.assign(state.local[id] || {}, fields);
+  save(); render();
+}
+
+// ---------- export ----------
+function exportData() {
+  return JSON.stringify({ exported_at: Date.now(), changes: state.local }, null, 1);
+}
+function markExported() { state.lastExport = Date.now(); save(); render(); }
+function fileName() { return "progress.json"; }
+
+async function share() {
+  const file = new File([exportData()], fileName(), { type: "application/json" });
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+    try {
+      await navigator.share({ files: [file], title: "Spanish flashcards progress" });
+      markExported(); toast("Shared. Now import it on your PC");
+    } catch (e) { if (e.name !== "AbortError") toast("Sharing failed. Try Download instead"); }
+  } else {
+    toast("Sharing isn't supported here. Use Download instead");
+  }
+}
+function download() {
+  const url = URL.createObjectURL(new Blob([exportData()], { type: "application/json" }));
+  const a = Object.assign(document.createElement("a"), { href: url, download: fileName() });
+  document.body.append(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  markExported(); toast("Saved progress.json to Downloads");
+}
+async function copy() {
+  try { await navigator.clipboard.writeText(exportData()); markExported(); toast("Copied. Paste it into progress.json on your PC"); }
+  catch (e) { toast("Couldn't copy. Use Download instead"); }
+}
+
+// ---------- events ----------
+$("card").addEventListener("click", reveal);
+$("card").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reveal(); } });
+$("nextBtn").addEventListener("click", next);
+$("showClueBtn").addEventListener("click", () => { $("clueBefore").hidden = false; $("showClueBtn").hidden = true; });
+document.querySelectorAll(".level").forEach(b => b.addEventListener("click", () => {
+  const id = state.queue[state.pos];
+  setLocal(id, { level: b.dataset.level, level_changed_at: Date.now() });
+  toast(`Level set to ${LEVEL_NAMES[b.dataset.level]}`);
+}));
+$("editClueBtn").addEventListener("click", () => {
+  $("clueInput").value = clueOf(cards[state.queue[state.pos]]) || "";
+  $("clueDlg").showModal(); $("clueInput").focus();
+});
+$("saveClue").addEventListener("click", () => {
+  const text = $("clueInput").value.trim();
+  setLocal(state.queue[state.pos], { clue: text || null, clue_changed_at: Date.now() });
+  $("clueDlg").close(); toast(text ? "Clue saved" : "Clue removed");
+});
+$("cancelClue").addEventListener("click", () => $("clueDlg").close());
+
+$("menuBtn").addEventListener("click", () => {
+  const tally = { frequent: 0, infrequent: 0, learned: 0 };
+  for (const c of Object.values(cards)) tally[levelOf(c)]++;
+  $("counts").innerHTML = "";
+  for (const l of LEVELS) {
+    const d = document.createElement("div");
+    d.innerHTML = `<b></b>${LEVEL_NAMES[l]}`; d.querySelector("b").textContent = tally[l];
+    d.style.color = `var(--${l})`;
+    $("counts").append(d);
+  }
+  $("menu").showModal();
+});
+$("closeMenu").addEventListener("click", () => $("menu").close());
+$("newRoundBtn").addEventListener("click", () => {
+  state.lastCard = state.queue[state.pos]; makeRound(); revealed = false; render();
+  $("menu").close(); toast("New round started");
+});
+$("helpBtn").addEventListener("click", () => { $("menu").close(); $("help").showModal(); });
+$("closeHelp").addEventListener("click", () => { $("help").close(); state.seenHelp = true; save(); });
+$("exportBtn").addEventListener("click", () => {
+  const total = Object.keys(state.local).length, n = unsyncedCount();
+  $("exportCount").textContent = total
+    ? `${total} card${total > 1 ? "s" : ""} with changes to send` + (n < total ? ` (${n} new since your last export).` : ".")
+    : "You haven't changed any levels or clues yet, so there's nothing to send.";
+  $("menu").close(); $("exportDlg").showModal();
+});
+$("shareBtn").addEventListener("click", share);
+$("downloadBtn").addEventListener("click", download);
+$("copyBtn").addEventListener("click", copy);
+$("closeExport").addEventListener("click", () => $("exportDlg").close());
+
+// ---------- start ----------
+function fail(html) {
+  $("main").style.display = "none";
+  $("error").style.display = "block";
+  $("error").innerHTML = html;
+}
+fetch("words.json?v=" + Date.now(), { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(data => {
+    for (const c of data.cards) if (c.active) cards[c.id] = c;
+    if (!Object.keys(cards).length) {
+      return fail("<b>No cards yet.</b><br>Add words to <code>word_source_file.md</code>, run <code>python flashcards.py build</code> and push.");
+    }
+    pruneLocal(); save();
+    render();
+    if (!state.seenHelp) $("help").showModal();
+  })
+  .catch(() => fail(
+    "<b>Couldn't load the word list.</b><br>Check your internet connection and reopen the app." +
+    (location.protocol === "file:" ? "<br><br>(On a PC, this page must be served, e.g. <code>python -m http.server</code> in the app folder, not opened as a file.)" : "")
+  ));
+</script>
+</body>
+</html>

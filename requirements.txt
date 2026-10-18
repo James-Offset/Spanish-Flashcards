@@ -1,0 +1,1 @@
+pytest  # only needed to run the tests; the app and pipeline need nothing extra
