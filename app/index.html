@@ -32,23 +32,27 @@
     -webkit-tap-highlight-color: transparent;
   }
   button { font: inherit; color: inherit; cursor: pointer; }
-  header { display: flex; align-items: center; gap: 10px; padding: 12px 0; }
+  header { display: flex; align-items: center; gap: 10px; padding: 12px 0 8px; }
   #progress { font-weight: 600; }
   #unsynced { font-size: 13px; color: var(--frequent); flex: 1; }
   #menuBtn { background: none; border: 1px solid var(--border); border-radius: 10px; padding: 6px 12px; }
 
+  #modeSwitch { display: flex; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 3px; margin-bottom: 12px; }
+  #modeSwitch button { flex: 1; border: none; background: none; border-radius: 9px; padding: 8px 4px; font-size: 15px; color: var(--muted); }
+  #modeSwitch button.on { background: var(--accent); color: var(--accent-text); font-weight: 650; }
+
   main { flex: 1; display: flex; flex-direction: column; gap: 14px; padding-bottom: 16px; min-height: 0; }
   #card {
-    flex: 1; min-height: 260px; background: var(--surface); border: 1px solid var(--border);
+    flex: 1; min-height: 240px; background: var(--surface); border: 1px solid var(--border);
     border-radius: 18px; padding: 24px 20px; display: flex; flex-direction: column;
     justify-content: center; align-items: center; text-align: center; gap: 14px; user-select: none;
   }
   #levelTag { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; }
-  #es { font-size: clamp(24px, 7vw, 34px); font-weight: 650; line-height: 1.25; overflow-wrap: anywhere; }
+  #front { font-size: clamp(24px, 7vw, 34px); font-weight: 650; line-height: 1.25; overflow-wrap: anywhere; }
   #hint { color: var(--muted); font-size: 15px; }
   #answer { display: none; border-top: 1px solid var(--border); padding-top: 14px; width: 100%; }
-  #en { font-size: 22px; }
-  #en.missing { color: var(--muted); font-style: italic; font-size: 17px; }
+  #back { font-size: 22px; overflow-wrap: anywhere; }
+  #back.missing { color: var(--muted); font-style: italic; font-size: 17px; }
   .clue { margin-top: 10px; color: var(--muted); font-size: 16px; }
   .clue::before { content: "Clue: "; font-weight: 600; }
   .revealed #answer { display: block; }
@@ -69,6 +73,7 @@
   dialog { border: none; border-radius: 18px; padding: 20px; width: min(92vw, 520px); background: var(--surface); color: var(--text); }
   dialog::backdrop { background: rgba(0,0,0,.45); }
   dialog h2 { margin: 0 0 10px; font-size: 20px; }
+  dialog h3 { margin: 14px 0 4px; font-size: 16px; }
   dialog ol, dialog ul { padding-left: 22px; margin: 8px 0; }
   dialog li { margin: 6px 0; }
   dialog .stack { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
@@ -95,26 +100,31 @@
   <button id="menuBtn" aria-label="Menu">☰ Menu</button>
 </header>
 
+<div id="modeSwitch" role="group" aria-label="Study mode">
+  <button data-mode="es">Spanish → English</button>
+  <button data-mode="en">English → Spanish</button>
+</div>
+
 <div id="error"></div>
 
 <main id="main">
-  <div id="card" role="button" tabindex="0" aria-label="Tap to reveal the English">
+  <div id="card" role="button" tabindex="0" aria-label="Tap to reveal the answer">
     <div id="levelTag"></div>
-    <div id="es"></div>
-    <div id="hint">Tap the card to see the English</div>
+    <div id="front"></div>
+    <div id="hint"></div>
     <div id="answer">
-      <div id="en"></div>
+      <div id="back"></div>
       <div id="clueAfter" class="clue" hidden></div>
     </div>
   </div>
 
-  <div class="row" id="preReveal">
+  <div class="row">
     <button class="small" id="showClueBtn" hidden>💡 Show clue</button>
   </div>
   <div id="clueBefore" class="clue" hidden></div>
 
   <div id="afterReveal">
-    <div class="label">How often should this card come up?</div>
+    <div class="label" id="levelLabel"></div>
     <div class="row">
       <button class="level" data-level="frequent">Frequent</button>
       <button class="level" data-level="infrequent">Infrequent</button>
@@ -130,6 +140,7 @@
 
 <dialog id="menu">
   <h2>Menu</h2>
+  <div class="label" id="countsLabel" style="text-align:left"></div>
   <div class="counts" id="counts"></div>
   <div class="stack">
     <button id="exportBtn">⬆ Send progress to my PC…</button>
@@ -141,11 +152,17 @@
 
 <dialog id="help">
   <h2>How to use</h2>
+  <h3>Two ways to practise</h3>
+  <ul>
+    <li><b>Spanish → English</b>: you see the Spanish and recall the meaning.</li>
+    <li><b>English → Spanish</b>: you see the English and try to say the Spanish.</li>
+  </ul>
+  Switch with the buttons at the top. Each mode keeps its own place, levels and clues.
+  <h3>Each card</h3>
   <ol>
-    <li><b>Read the Spanish</b> and try to remember the meaning.</li>
-    <li><b>Tap the card</b> to see the English (and the clue, if there is one).
+    <li><b>Tap the card</b> to see the answer (and the clue, if there is one).
       If a card has a clue, you can tap <b>💡 Show clue</b> first for a hint.</li>
-    <li><b>Pick a level</b> if you want to change how often the card comes up:
+    <li><b>Pick a level</b> if you want to change how often the card comes up in this mode:
       <ul>
         <li><b>Frequent</b>: about 3 times per round (new words start here)</li>
         <li><b>Infrequent</b>: once per round</li>
@@ -153,11 +170,13 @@
       </ul>
       A level change applies from the next round.
     </li>
-    <li><b>✎ Add clue</b> lets you write your own hint for a card.</li>
+    <li><b>✎ Add clue</b> lets you write your own hint for this card in this mode.</li>
     <li>Tap <b>Next card</b> to move on. Your place is saved, so you can close the app any time and carry on later.</li>
   </ol>
-  <p>Levels and clues you set here are saved on this phone. To copy them into your word list on your PC,
-    use <b>Menu → Send progress to my PC</b> now and then. The header shows how many changes haven't been sent yet.</p>
+  <h3>Keeping your PC up to date</h3>
+  <p>Levels and clues you set here are saved on this phone. Now and then, use
+    <b>Menu → Send progress to my PC</b> to copy them into your word list.
+    The top bar shows how many changes haven't been sent yet.</p>
   <div class="stack"><button id="closeHelp">Got it</button></div>
 </dialog>
 
@@ -165,9 +184,9 @@
   <h2>Send progress to your PC</h2>
   <ol>
     <li>Tap <b>Share file</b> below and send it to yourself (Google Drive, email, etc.).</li>
-    <li>On your PC, save it as <code>progress.json</code> in the <code>Spanish Flashcards</code> folder.</li>
-    <li>Open a terminal in that folder and run:<br><code>python flashcards.py import progress.json</code></li>
-    <li>Push to GitHub, as the command tells you. The app picks up the changes next time it opens.</li>
+    <li>On your PC, save the file. Your <b>Downloads</b> folder or the <code>Spanish Flashcards</code> folder both work.</li>
+    <li>In the <code>Spanish Flashcards</code> folder, double-click <b>Update flashcards.bat</b>.</li>
+    <li>In <b>GitHub Desktop</b>, click <b>Commit to main</b>, then <b>Push origin</b>. The app picks up the changes a few minutes later.</li>
   </ol>
   <p id="exportCount"></p>
   <div class="stack">
@@ -179,8 +198,8 @@
 </dialog>
 
 <dialog id="clueDlg">
-  <h2>Your clue</h2>
-  <p class="label" style="text-align:left">A hint that helps you remember. Leave it empty to remove the clue.</p>
+  <h2 id="clueTitle">Your clue</h2>
+  <p class="label" style="text-align:left">A hint that helps you remember. It only shows in this mode. Leave it empty to remove the clue.</p>
   <textarea id="clueInput" maxlength="300"></textarea>
   <div class="stack">
     <button id="saveClue">Save clue</button>
@@ -193,15 +212,31 @@
 const KEY = "spanish-flashcards-v1";
 const LEVELS = ["frequent", "infrequent", "learned"];
 const LEVEL_NAMES = { frequent: "Frequent", infrequent: "Infrequent", learned: "Learned" };
+const MODES = ["es", "en"];  // which language is on the front
+const MODE_NAMES = { es: "Spanish → English", en: "English → Spanish" };
+const LANG = { es: "Spanish", en: "English" };
+const other = (m) => (m === "es" ? "en" : "es");
 const $ = (id) => document.getElementById(id);
 
 // ---------- saved state (this phone only) ----------
+function emptyRound() { return { queue: [], pos: 0, lastCard: null }; }
 function loadState() {
-  try {
-    const s = JSON.parse(localStorage.getItem(KEY));
-    if (s && Array.isArray(s.queue)) return s;
-  } catch (e) {}
-  return { queue: [], pos: 0, local: {}, lastExport: 0, seenHelp: false, lastCard: null };
+  let s = null;
+  try { s = JSON.parse(localStorage.getItem(KEY)); } catch (e) {}
+  if (s && Array.isArray(s.queue)) {
+    // saved by the one-mode version: everything so far was Spanish → English
+    const local = {};
+    for (const [id, l] of Object.entries(s.local || {})) local[id] = { es: l };
+    s = { mode: "es", rounds: { es: { queue: s.queue, pos: s.pos || 0, lastCard: s.lastCard || null }, en: emptyRound() },
+          local, lastExport: s.lastExport || 0, seenHelp: !!s.seenHelp };
+  }
+  if (s && s.rounds) {
+    for (const m of MODES) s.rounds[m] = s.rounds[m] || emptyRound();
+    if (!MODES.includes(s.mode)) s.mode = "es";
+    s.local = s.local || {};
+    return s;
+  }
+  return { mode: "es", rounds: { es: emptyRound(), en: emptyRound() }, local: {}, lastExport: 0, seenHelp: false };
 }
 let state = loadState();
 function save() {
@@ -211,87 +246,106 @@ function save() {
 
 let cards = {};       // id -> card from words.json (active only)
 let revealed = false;
+const mode = () => state.mode;
+const round = () => state.rounds[state.mode];
+// English→Spanish needs an English side to show
+const inMode = (c, m) => !!c && (m === "es" || !!c.en);
 
 // The phone's change wins if it is newer than what the repo has.
-function levelOf(c) {
-  const l = state.local[c.id];
-  return l && l.level && l.level_changed_at > c.level_updated ? l.level : c.level;
+function localOf(id, m) { return (state.local[id] || {})[m] || {}; }
+function levelOf(c, m = mode()) {
+  const l = localOf(c.id, m), r = c.modes[m];
+  return l.level && l.level_changed_at > r.level_updated ? l.level : r.level;
 }
-function clueOf(c) {
-  const l = state.local[c.id];
-  return l && "clue" in l && l.clue_changed_at > c.clue_updated ? l.clue : c.clue;
+function clueOf(c, m = mode()) {
+  const l = localOf(c.id, m), r = c.modes[m];
+  return "clue" in l && l.clue_changed_at > r.clue_updated ? l.clue : r.clue;
 }
 
 // Drop local changes once the repo has caught up with them.
 function pruneLocal() {
-  for (const [id, l] of Object.entries(state.local)) {
+  for (const [id, byMode] of Object.entries(state.local)) {
     const c = cards[id];
-    if (!c) continue;
-    if (l.level && l.level_changed_at <= c.level_updated) { delete l.level; delete l.level_changed_at; }
-    if ("clue" in l && l.clue_changed_at <= c.clue_updated) { delete l.clue; delete l.clue_changed_at; }
-    if (!Object.keys(l).length) delete state.local[id];
+    if (c) {
+      for (const m of MODES) {
+        const l = byMode[m];
+        if (!l) continue;
+        if (l.level && l.level_changed_at <= c.modes[m].level_updated) { delete l.level; delete l.level_changed_at; }
+        if ("clue" in l && l.clue_changed_at <= c.modes[m].clue_updated) { delete l.clue; delete l.clue_changed_at; }
+        if (!Object.keys(l).length) delete byMode[m];
+      }
+    }
+    if (!Object.keys(byMode).length) delete state.local[id];
   }
 }
-function changeTimes(l) { return [l.level_changed_at || 0, l.clue_changed_at || 0]; }
 function unsyncedCount() {
-  return Object.values(state.local).filter(l => Math.max(...changeTimes(l)) > state.lastExport).length;
+  return Object.values(state.local).filter(byMode => Object.values(byMode).some(l =>
+    Math.max(l.level_changed_at || 0, l.clue_changed_at || 0) > state.lastExport)).length;
 }
 
 // ---------- rounds ----------
 // Frequent: 3 copies, infrequent: 1, learned: 25% chance of 1. Copies are spread apart.
 function makeRound() {
+  const m = mode(), r = round();
+  const eligible = Object.values(cards).filter(c => inMode(c, m));
   const counts = {};
-  for (const c of Object.values(cards)) {
-    const lvl = levelOf(c);
+  for (const c of eligible) {
+    const lvl = levelOf(c, m);
     const n = lvl === "frequent" ? 3 : lvl === "infrequent" ? 1 : (Math.random() < 0.25 ? 1 : 0);
     if (n) counts[c.id] = n;
   }
-  if (!Object.keys(counts).length) for (const id of Object.keys(cards)) counts[id] = 1;
+  if (!Object.keys(counts).length) for (const c of eligible) counts[c.id] = 1;
 
   const distinct = Object.keys(counts).length;
   const gap = Math.min(8, distinct - 1);
-  const recent = state.lastCard ? [state.lastCard] : [];
+  const recent = r.lastCard ? [r.lastCard] : [];
   const queue = [];
   let left = Object.values(counts).reduce((a, b) => a + b, 0);
   while (left > 0) {
     let pool = Object.keys(counts).filter(id => counts[id] > 0 && !recent.includes(id));
     if (!pool.length) pool = Object.keys(counts).filter(id => counts[id] > 0);
     // weight by remaining copies, so frequent cards are spread through the whole round
-    let r = Math.random() * pool.reduce((a, id) => a + counts[id], 0);
+    let x = Math.random() * pool.reduce((a, id) => a + counts[id], 0);
     let pick = pool[pool.length - 1];
-    for (const id of pool) { r -= counts[id]; if (r < 0) { pick = id; break; } }
+    for (const id of pool) { x -= counts[id]; if (x < 0) { pick = id; break; } }
     queue.push(pick); counts[pick]--; left--;
     recent.push(pick); if (recent.length > gap) recent.shift();
   }
-  state.queue = queue; state.pos = 0;
+  r.queue = queue; r.pos = 0;
   save();
 }
 
 function currentId() {
+  const r = round();
   // skip cards removed from the deck since this round was made
-  while (state.pos < state.queue.length && !cards[state.queue[state.pos]]) state.pos++;
-  if (state.pos >= state.queue.length) makeRound();
-  return state.queue[state.pos];
+  while (r.pos < r.queue.length && !inMode(cards[r.queue[r.pos]], mode())) r.pos++;
+  if (r.pos >= r.queue.length) makeRound();
+  return r.queue[r.pos];
 }
 
 // ---------- rendering ----------
 function render() {
+  const m = mode(), r = round();
   const id = currentId();
   const c = cards[id];
   const lvl = levelOf(c), clue = clueOf(c);
-  $("progress").textContent = `Card ${state.pos + 1} of ${state.queue.length}`;
+  const back = m === "es" ? c.en : c.es;
+  document.querySelectorAll("#modeSwitch button").forEach(b => b.classList.toggle("on", b.dataset.mode === m));
+  $("progress").textContent = `Card ${r.pos + 1} of ${r.queue.length}`;
   const n = unsyncedCount();
   $("unsynced").textContent = n ? `${n} unsent change${n > 1 ? "s" : ""}` : "";
   $("levelTag").textContent = LEVEL_NAMES[lvl];
   $("levelTag").style.color = `var(--${lvl})`;
-  $("es").textContent = c.es;
-  $("en").textContent = c.en || "(no translation yet)";
-  $("en").classList.toggle("missing", !c.en);
+  $("front").textContent = m === "es" ? c.es : c.en;
+  $("hint").textContent = `Tap the card to see the ${LANG[other(m)]}`;
+  $("back").textContent = back || "(no translation yet)";
+  $("back").classList.toggle("missing", !back);
   for (const el of [$("clueBefore"), $("clueAfter")]) el.textContent = clue || "";
   $("clueAfter").hidden = !clue;
   $("clueBefore").hidden = true;
   $("showClueBtn").hidden = !clue || revealed;
   $("editClueBtn").textContent = clue ? "✎ Edit clue" : "✎ Add clue";
+  $("levelLabel").textContent = `How often should this card come up in ${MODE_NAMES[m]}?`;
   $("card").classList.toggle("revealed", revealed);
   $("main").classList.toggle("revealed-ui", revealed);
   document.querySelectorAll(".level").forEach(b => b.classList.toggle("on", b.dataset.level === lvl));
@@ -299,10 +353,17 @@ function render() {
 
 function reveal() { if (!revealed) { revealed = true; render(); } }
 function next() {
-  state.lastCard = state.queue[state.pos];
-  state.pos++; revealed = false;
+  const r = round();
+  r.lastCard = r.queue[r.pos];
+  r.pos++; revealed = false;
   save(); render();
   window.scrollTo(0, 0);
+}
+function setMode(m) {
+  if (m === state.mode) return;
+  state.mode = m; revealed = false;
+  save(); render();
+  toast(MODE_NAMES[m]);
 }
 
 let toastTimer;
@@ -312,7 +373,8 @@ function toast(msg) {
 }
 
 function setLocal(id, fields) {
-  state.local[id] = Object.assign(state.local[id] || {}, fields);
+  const byMode = state.local[id] = state.local[id] || {};
+  byMode[mode()] = Object.assign(byMode[mode()] || {}, fields);
   save(); render();
 }
 
@@ -321,14 +383,14 @@ function exportData() {
   return JSON.stringify({ exported_at: Date.now(), changes: state.local }, null, 1);
 }
 function markExported() { state.lastExport = Date.now(); save(); render(); }
-function fileName() { return "progress.json"; }
+const FILE_NAME = "progress.json";
 
 async function share() {
-  const file = new File([exportData()], fileName(), { type: "application/json" });
+  const file = new File([exportData()], FILE_NAME, { type: "application/json" });
   if (navigator.canShare && navigator.canShare({ files: [file] })) {
     try {
       await navigator.share({ files: [file], title: "Spanish flashcards progress" });
-      markExported(); toast("Shared. Now import it on your PC");
+      markExported(); toast("Shared. Now save it on your PC");
     } catch (e) { if (e.name !== "AbortError") toast("Sharing failed. Try Download instead"); }
   } else {
     toast("Sharing isn't supported here. Use Download instead");
@@ -336,7 +398,7 @@ async function share() {
 }
 function download() {
   const url = URL.createObjectURL(new Blob([exportData()], { type: "application/json" }));
-  const a = Object.assign(document.createElement("a"), { href: url, download: fileName() });
+  const a = Object.assign(document.createElement("a"), { href: url, download: FILE_NAME });
   document.body.append(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   markExported(); toast("Saved progress.json to Downloads");
@@ -347,42 +409,47 @@ async function copy() {
 }
 
 // ---------- events ----------
+document.querySelectorAll("#modeSwitch button").forEach(b => b.addEventListener("click", () => setMode(b.dataset.mode)));
 $("card").addEventListener("click", reveal);
 $("card").addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reveal(); } });
 $("nextBtn").addEventListener("click", next);
 $("showClueBtn").addEventListener("click", () => { $("clueBefore").hidden = false; $("showClueBtn").hidden = true; });
 document.querySelectorAll(".level").forEach(b => b.addEventListener("click", () => {
-  const id = state.queue[state.pos];
-  setLocal(id, { level: b.dataset.level, level_changed_at: Date.now() });
-  toast(`Level set to ${LEVEL_NAMES[b.dataset.level]}`);
+  const r = round();
+  setLocal(r.queue[r.pos], { level: b.dataset.level, level_changed_at: Date.now() });
+  toast(`Level set to ${LEVEL_NAMES[b.dataset.level]} (${MODE_NAMES[mode()]})`);
 }));
 $("editClueBtn").addEventListener("click", () => {
-  $("clueInput").value = clueOf(cards[state.queue[state.pos]]) || "";
+  const r = round();
+  $("clueTitle").textContent = `Your clue (${MODE_NAMES[mode()]})`;
+  $("clueInput").value = clueOf(cards[r.queue[r.pos]]) || "";
   $("clueDlg").showModal(); $("clueInput").focus();
 });
 $("saveClue").addEventListener("click", () => {
-  const text = $("clueInput").value.trim();
-  setLocal(state.queue[state.pos], { clue: text || null, clue_changed_at: Date.now() });
+  const r = round(), text = $("clueInput").value.trim();
+  setLocal(r.queue[r.pos], { clue: text || null, clue_changed_at: Date.now() });
   $("clueDlg").close(); toast(text ? "Clue saved" : "Clue removed");
 });
 $("cancelClue").addEventListener("click", () => $("clueDlg").close());
 
 $("menuBtn").addEventListener("click", () => {
-  const tally = { frequent: 0, infrequent: 0, learned: 0 };
-  for (const c of Object.values(cards)) tally[levelOf(c)]++;
+  const m = mode(), tally = { frequent: 0, infrequent: 0, learned: 0 };
+  for (const c of Object.values(cards)) if (inMode(c, m)) tally[levelOf(c, m)]++;
+  $("countsLabel").textContent = `Cards in ${MODE_NAMES[m]}:`;
   $("counts").innerHTML = "";
   for (const l of LEVELS) {
     const d = document.createElement("div");
-    d.innerHTML = `<b></b>${LEVEL_NAMES[l]}`; d.querySelector("b").textContent = tally[l];
-    d.style.color = `var(--${l})`;
+    d.innerHTML = "<b></b>"; d.querySelector("b").textContent = tally[l];
+    d.append(LEVEL_NAMES[l]); d.style.color = `var(--${l})`;
     $("counts").append(d);
   }
   $("menu").showModal();
 });
 $("closeMenu").addEventListener("click", () => $("menu").close());
 $("newRoundBtn").addEventListener("click", () => {
-  state.lastCard = state.queue[state.pos]; makeRound(); revealed = false; render();
-  $("menu").close(); toast("New round started");
+  const r = round();
+  r.lastCard = r.queue[r.pos]; makeRound(); revealed = false; render();
+  $("menu").close(); toast(`New ${MODE_NAMES[mode()]} round started`);
 });
 $("helpBtn").addEventListener("click", () => { $("menu").close(); $("help").showModal(); });
 $("closeHelp").addEventListener("click", () => { $("help").close(); state.seenHelp = true; save(); });
@@ -401,15 +468,23 @@ $("closeExport").addEventListener("click", () => $("exportDlg").close());
 // ---------- start ----------
 function fail(html) {
   $("main").style.display = "none";
+  $("modeSwitch").style.display = "none";
   $("error").style.display = "block";
   $("error").innerHTML = html;
 }
 fetch("words.json?v=" + Date.now(), { cache: "no-store" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
-    for (const c of data.cards) if (c.active) cards[c.id] = c;
+    for (const c of data.cards) {
+      if (!c.active) continue;
+      if (!c.modes) {  // deck built before two modes: treat its level/clue as Spanish → English
+        c.modes = { es: { level: c.level, level_updated: c.level_updated, clue: c.clue, clue_updated: c.clue_updated },
+                    en: { level: "frequent", level_updated: 0, clue: null, clue_updated: 0 } };
+      }
+      cards[c.id] = c;
+    }
     if (!Object.keys(cards).length) {
-      return fail("<b>No cards yet.</b><br>Add words to <code>word_source_file.md</code>, run <code>python flashcards.py build</code> and push.");
+      return fail("<b>No cards yet.</b><br>Add words to <code>word_source_file.md</code>, double-click <b>Update flashcards.bat</b>, then commit and push in GitHub Desktop.");
     }
     pruneLocal(); save();
     render();

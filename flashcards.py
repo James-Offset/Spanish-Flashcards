@@ -1,7 +1,10 @@
 """Spanish flashcards pipeline.
 
+    python flashcards.py                          # do everything: import phone progress, then build
     python flashcards.py build                    # source file -> app/words.json
-    python flashcards.py import progress.json     # merge levels/clues exported from the app, then build
+    python flashcards.py import progress.json     # merge one file exported from the app, then build
+
+Or just double-click "Update flashcards.bat".
 
 The source file (word_source_file.md) holds the words. app/words.json holds
 everything else (translations, levels, clues) and is never thrown away.
@@ -11,28 +14,34 @@ import argparse
 import hashlib
 import json
 import re
+import shutil
 import sys
 import time
 import urllib.parse
 import urllib.request
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 DEFAULT_SOURCE = HERE / "word_source_file.md"
 DEFAULT_DECK = HERE / "app" / "words.json"
+DOWNLOADS = Path.home() / "Downloads"
 
 LEVELS = ("frequent", "infrequent", "learned")
+MODES = ("es", "en")  # which language is shown on the front of the card
+MODE_NAMES = {"es": "Spanish→English", "en": "English→Spanish"}
+CLUE_MARKERS = {"##": "es", ">>": "en"}
 SPANISH_CHARS = re.compile(r"[ñáéíóúü¿¡]", re.IGNORECASE)
 NOISE_LINE = re.compile(r"^[\s_\-–—*.>]*$")
 LEADING_JUNK = re.compile(r"^(?:-+>|[-–—•*>]+)\s*")
 QUOTES = "\"'“”‘’«» "
 
-GIT_STEPS = (
-    "Now publish it to your phone:\n"
-    "    git add -A\n"
-    '    git commit -m "Update flashcards"\n'
-    "    git push"
+PUBLISH_STEPS = (
+    "Now publish it to your phone with GitHub Desktop:\n"
+    "  1. Open GitHub Desktop (current repository: Spanish-Flashcards).\n"
+    "  2. Bottom-left, type a summary such as 'Update words', then click 'Commit to main'.\n"
+    "  3. Click 'Push origin' at the top.\n"
+    "The app on your phone updates a few minutes later."
 )
 
 
@@ -54,14 +63,16 @@ def clean(text):
 
 
 def parse_line(line):
-    """Return (es, en or None, clue or None), or None for lines that aren't cards."""
+    """Return (es, en, clue_es, clue_en) - any but es may be None - or None for non-cards.
+
+    '## clue' is shown with the Spanish side, '>> clue' with the English side."""
     line = line.strip()
     if not line or line.startswith("#") or NOISE_LINE.match(line) or "http" in line:
         return None
-    clue = None
-    if "##" in line:
-        line, clue = line.split("##", 1)
-        clue = clean(clue) or None
+    parts = re.split(r"(##|>>)", line)
+    line, clues = parts[0], {"es": None, "en": None}
+    for marker, text in zip(parts[1::2], parts[2::2]):
+        clues[CLUE_MARKERS[marker]] = clean(text) or None
     en = None
     if "=" in line:
         line, en = line.split("=", 1)
@@ -69,7 +80,7 @@ def parse_line(line):
     es = clean(line)
     if not es:
         return None
-    return es, en, clue
+    return es, en, clues["es"], clues["en"]
 
 
 def parse_source(text):
@@ -133,18 +144,37 @@ def looks_english_first(left, translate):
 
 # ---------------------------------------------------------------- deck
 
+def new_mode():
+    return {"level": "frequent", "level_updated": 0, "clue": None, "clue_src": None, "clue_updated": 0}
+
+
+def migrate_card(card):
+    """Cards saved before there were two modes keep their level and clue as Spanish→English."""
+    if "modes" not in card:
+        es_mode = new_mode()
+        for key in es_mode:
+            if key in card:
+                es_mode[key] = card.pop(key)
+        card["modes"] = {"es": es_mode, "en": new_mode()}
+    return card
+
+
 def load_deck(path):
     if not path.exists():
         return {}
     data = json.loads(path.read_text(encoding="utf-8"))
-    return {card["id"]: card for card in data["cards"]}
+    return {card["id"]: migrate_card(card) for card in data["cards"]}
 
 
 def save_deck(path, deck):
-    path.parent.mkdir(parents=True, exist_ok=True)
+    """Write the deck; returns False (and leaves the file alone) if nothing changed."""
     cards = sorted(deck.values(), key=lambda c: (c["added"], c["es"].lower()))
-    data = {"generated": now_ms(), "cards": cards}
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    text = json.dumps({"cards": cards}, ensure_ascii=False, indent=1) + "\n"
+    if path.exists() and path.read_text(encoding="utf-8") == text:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+    return True
 
 
 def new_card(cid, es):
@@ -153,14 +183,21 @@ def new_card(cid, es):
         "es": es,
         "en": None,
         "en_source": None,
-        "clue": None,
-        "clue_src": None,
-        "clue_updated": 0,
-        "level": "frequent",
-        "level_updated": 0,
         "added": date.today().isoformat(),
         "active": True,
+        "modes": {m: new_mode() for m in MODES},
     }
+
+
+def apply_source_clue(mode, clue):
+    """Only react when the source clue itself changes, so clues edited in the app survive rebuilds."""
+    if clue == mode["clue_src"]:
+        return False
+    if clue or mode["clue"] == mode["clue_src"]:
+        mode["clue"] = clue
+        mode["clue_updated"] = now_ms()
+    mode["clue_src"] = clue
+    return True
 
 
 def build(source_path, deck_path, translate=None, log=print):
@@ -183,7 +220,7 @@ def build(source_path, deck_path, translate=None, log=print):
             offline_reason, translate = str(exc), None  # stop trying for the rest of this run
             return None
 
-    for es, en, clue in records:
+    for es, en, clue_es, clue_en in records:
         cid = card_id(es)
         direction_checked = True
         if en and cid not in deck and card_id(en) in deck:
@@ -227,12 +264,8 @@ def build(source_path, deck_path, translate=None, log=print):
             card["en"], card["en_source"] = None, None  # English removed from source: re-translate
             changed = True
 
-        if clue != card["clue_src"]:  # only react when the source clue itself changes
-            if clue or card["clue"] == card["clue_src"]:
-                card["clue"] = clue
-                card["clue_updated"] = now_ms()
-            card["clue_src"] = clue
-            changed = True
+        changed |= apply_source_clue(card["modes"]["es"], clue_es)
+        changed |= apply_source_clue(card["modes"]["en"], clue_en)
 
         if changed and not is_new:
             stats["updated"] += 1
@@ -249,11 +282,11 @@ def build(source_path, deck_path, translate=None, log=print):
                 card["en"], card["en_source"] = result, "auto"
                 stats["translated"] += 1
 
-    save_deck(deck_path, deck)
+    stats["saved"] = save_deck(deck_path, deck)
 
     active = [c for c in deck.values() if c["active"]]
-    log(f"Deck saved: {len(active)} cards in {deck_path}")
-    log("  " + ", ".join(f"{v} {k}" for k, v in stats.items()))
+    log(f"Word list: {len(active)} cards  ({stats['added']} new, {stats['updated']} changed, "
+        f"{stats['deactivated']} removed, {stats['restored']} restored, {stats['translated']} translated)")
     if swapped:
         log("\nThese looked English-first, so I swapped them (put Spanish on the left to be sure):")
         for line in swapped:
@@ -267,85 +300,171 @@ def build(source_path, deck_path, translate=None, log=print):
             log(f"  - {es}")
     missing = [c["es"] for c in active if not c["en"]]
     if missing:
-        log(f"\n{len(missing)} cards have no English yet; they will be translated on the next build.")
+        log(f"\n{len(missing)} cards have no English yet; they will be translated next time.")
         if offline_reason:
             log(f"  Reason: {offline_reason}")
     return stats
 
 
-def import_progress(progress_path, deck_path, log=print):
-    if not progress_path.exists() and (HERE / progress_path).exists():
-        progress_path = HERE / progress_path  # run from another folder
-    if not progress_path.exists():
-        raise SystemExit(
-            f"Can't find {progress_path}.\n"
-            "Save the file you exported from the app into this folder, then run:\n"
-            "    python flashcards.py import progress.json"
-        )
+# ---------------------------------------------------------------- importing phone progress
+
+class BadProgressFile(Exception):
+    pass
+
+
+def read_progress(path):
     try:
-        changes = json.loads(progress_path.read_text(encoding="utf-8-sig"))["changes"]
-    except (ValueError, KeyError):
-        raise SystemExit(f"{progress_path} isn't a progress file exported from the app.")
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+        if not isinstance(data.get("changes"), dict):
+            raise ValueError
+        return data
+    except (ValueError, AttributeError, OSError):
+        raise BadProgressFile(f"{path.name} isn't a progress file exported from the app.")
+
+
+def import_progress(progress_path, deck_path, log=print):
+    """Merge one exported file into the deck; the newest change wins. Returns counts per mode."""
+    changes = read_progress(progress_path)["changes"]
     deck = load_deck(deck_path)
-    levels = clues = skipped = 0
+    counts = {m: {"levels": 0, "clues": 0} for m in MODES}
+    skipped = 0
     for cid, ch in changes.items():
         card = deck.get(cid)
         if card is None:
             skipped += 1
             continue
-        if ch.get("level") in LEVELS and ch.get("level_changed_at", 0) > card["level_updated"]:
-            card["level"], card["level_updated"] = ch["level"], ch["level_changed_at"]
-            levels += 1
-        if "clue" in ch and ch.get("clue_changed_at", 0) > card["clue_updated"]:
-            card["clue"], card["clue_updated"] = (ch["clue"] or "").strip() or None, ch["clue_changed_at"]
-            clues += 1
+        if not any(m in ch for m in MODES):
+            ch = {"es": ch}  # exported by the app before it had two modes
+        for m in MODES:
+            change, mode = ch.get(m) or {}, card["modes"][m]
+            if change.get("level") in LEVELS and change.get("level_changed_at", 0) > mode["level_updated"]:
+                mode["level"], mode["level_updated"] = change["level"], change["level_changed_at"]
+                counts[m]["levels"] += 1
+            if "clue" in change and change.get("clue_changed_at", 0) > mode["clue_updated"]:
+                mode["clue"] = (change["clue"] or "").strip() or None
+                mode["clue_updated"] = change["clue_changed_at"]
+                counts[m]["clues"] += 1
     save_deck(deck_path, deck)
-    log(f"Imported: {levels} levels updated, {clues} clues updated.")
+    summary = "; ".join(f"{MODE_NAMES[m]}: {c['levels']} levels, {c['clues']} clues" for m, c in counts.items())
+    log(f"Imported {progress_path.name}  ({summary})")
     if skipped:
-        log(f"  ({skipped} changes were for cards no longer in the deck and were skipped.)")
-    return levels, clues
+        log(f"  ({skipped} changes were for cards no longer in the word list and were skipped.)")
+    return counts
+
+
+def find_progress_files(folders):
+    """Exported files in the given folders (e.g. progress.json, 'progress (1).json'), oldest export first."""
+    found = {}
+    for folder in folders:
+        if folder.is_dir():
+            for path in folder.glob("progress*.json"):
+                found[path.resolve()] = path
+    dated = []
+    for path in found.values():
+        try:
+            dated.append((read_progress(path).get("exported_at", 0), path))
+        except BadProgressFile:
+            dated.append((0, path))  # reported when imported
+    return [path for _, path in sorted(dated, key=lambda d: d[0])]
+
+
+def archive(path, imported_dir):
+    """Move an imported file out of the way so it isn't imported again."""
+    imported_dir.mkdir(exist_ok=True)
+    try:
+        stamp = datetime.fromtimestamp(read_progress(path)["exported_at"] / 1000).strftime("%Y-%m-%d_%H%M%S")
+    except (BadProgressFile, KeyError, TypeError, ValueError, OSError):
+        stamp = datetime.now().strftime("%Y-%m-%d_%H%M%S")
+    target, n = imported_dir / f"progress_{stamp}.json", 1
+    while target.exists():
+        n += 1
+        target = imported_dir / f"progress_{stamp}_{n}.json"
+    shutil.move(str(path), str(target))
+    return target
+
+
+def update_everything(source, deck, translate, project_dir=HERE, downloads=DOWNLOADS, log=print):
+    """What happens with no arguments: import any exported progress files, then build."""
+    files = find_progress_files([project_dir, downloads])
+    imported = 0
+    if files:
+        log(f"Found {len(files)} progress file(s) from your phone:")
+        for path in files:
+            try:
+                import_progress(path, deck, log=lambda msg: log("  " + msg))
+            except BadProgressFile as exc:
+                log(f"  Skipped: {exc}")
+                continue
+            archive(path, project_dir / "imported")
+            imported += 1
+        log(f"  (moved to the 'imported' folder so they won't be imported twice)\n")
+    else:
+        log("No progress files from your phone found (looked in this folder and Downloads).\n")
+    stats = build(source, deck, translate)
+    return imported, stats
 
 
 # ---------------------------------------------------------------- CLI
+
+def launched_by_double_click():
+    """True when Windows opened a console just for this script (it would vanish on exit)."""
+    if sys.platform != "win32":
+        return False
+    try:
+        import ctypes
+        return ctypes.windll.kernel32.GetConsoleProcessList((ctypes.c_uint * 2)(), 2) == 1
+    except Exception:
+        return False
+
 
 def main(argv=None):
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(errors="replace")
     parser = argparse.ArgumentParser(
         prog="python flashcards.py",
-        description="Spanish flashcards: turn your word list into the phone app's deck.",
+        description="Spanish flashcards. With no command: import progress from your phone, then update the word list.",
     )
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE, help=argparse.SUPPRESS)
     parser.add_argument("--deck", type=Path, default=DEFAULT_DECK, help=argparse.SUPPRESS)
     parser.add_argument("--no-translate", action="store_true", help="skip auto-translation")
     sub = parser.add_subparsers(dest="command", metavar="command")
-    sub.add_parser("build", help="read word_source_file.md and update app/words.json")
-    imp = sub.add_parser("import", help="merge a progress file exported from the app, then build")
+    sub.add_parser("build", help="only update app/words.json from word_source_file.md")
+    imp = sub.add_parser("import", help="merge one progress file exported from the app, then build")
     imp.add_argument("file", type=Path, nargs="?", default=Path("progress.json"))
     args = parser.parse_args(argv)
 
+    translate = None if args.no_translate else google_translator()
+    before = args.deck.read_text(encoding="utf-8") if args.deck.exists() else None
+
     if args.command is None:
-        parser.print_help()
-        print(
-            "\nEveryday use:\n"
-            "  Added words?      python flashcards.py build\n"
-            "  Synced phone?     python flashcards.py import progress.json"
-        )
-        return
+        update_everything(args.source, args.deck, translate)
+    else:
+        if args.command == "import":
+            path = args.file
+            if not path.exists() and (HERE / path).exists():
+                path = HERE / path  # run from another folder
+            if not path.exists():
+                raise SystemExit(f"Can't find {path}. Save the file exported from the app into this folder.")
+            try:
+                import_progress(path, args.deck)
+            except BadProgressFile as exc:
+                raise SystemExit(str(exc))
+            print()
+        build(args.source, args.deck, translate)
 
-    translate = None
-    if not args.no_translate:
-        try:
-            translate = google_translator()
-        except TranslationUnavailable as exc:
-            print(f"Note: {exc}\nContinuing without translating.\n")
-
-    if args.command == "import":
-        import_progress(args.file, args.deck)
-        print()
-    build(args.source, args.deck, translate)
-    print("\n" + GIT_STEPS)
+    if args.deck.read_text(encoding="utf-8") != before:
+        print("\n" + PUBLISH_STEPS)
+    else:
+        print("\nNothing changed, so there's nothing to publish.")
 
 
 if __name__ == "__main__":
-    main()
+    wait = launched_by_double_click()
+    try:
+        main()
+    except SystemExit as exc:
+        if exc.code not in (None, 0):
+            print(exc.code if isinstance(exc.code, str) else f"Stopped (code {exc.code}).")
+    finally:
+        if wait:
+            input("\nPress Enter to close...")

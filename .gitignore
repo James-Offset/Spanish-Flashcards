@@ -1,3 +1,4 @@
-progress.json
+progress*.json
+imported/
 __pycache__/
 .pytest_cache/
