@@ -6,7 +6,7 @@
    "en": "My romie liked social networks a lot.",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -78,7 +78,7 @@
    "en": "We welcome new players",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -102,7 +102,7 @@
    "en": "Addicts",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -112,8 +112,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792516094237,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -170,7 +170,7 @@
   },
   {
    "id": "39e423bd8e",
-   "es": "Algo relacionado con deportes.",
+   "es": "Algo relacionado con deportes",
    "en": "Something related to sports.",
    "en_source": "auto",
    "added": "2026-10-18",
@@ -246,7 +246,7 @@
    "en": "indefinido",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -376,8 +376,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481946187,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -390,7 +390,7 @@
    "en": "Brighton",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -411,8 +411,8 @@
   {
    "id": "c2c59a66b6",
    "es": "cables",
-   "en": "Wires",
-   "en_source": "source",
+   "en": "cables",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -424,8 +424,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481847990,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -438,7 +438,7 @@
    "en": "calm",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "infrequent",
@@ -483,8 +483,8 @@
   {
    "id": "7d45eb69ce",
    "es": "carrera",
-   "en": "Career",
-   "en_source": "source",
+   "en": "career",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -496,8 +496,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "learned",
+     "level_updated": 1792773215632,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -558,7 +558,7 @@
    "en": "Colleagues - co-workers",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -651,7 +651,7 @@
   {
    "id": "7558b81240",
    "es": "Darse cuenta",
-   "en": "to realized",
+   "en": "to realize",
    "en_source": "source",
    "added": "2026-10-18",
    "active": true,
@@ -678,7 +678,7 @@
    "en": "There should be two more books",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -750,7 +750,7 @@
    "en": "imperfecto",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -774,7 +774,7 @@
    "en": "Defensor",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -798,7 +798,7 @@
    "en": "Thin - slim",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -904,8 +904,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773318536,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -952,8 +952,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773536395,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -990,7 +990,7 @@
    "en": "8 de dic",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1000,8 +1000,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "learned",
+     "level_updated": 1792773150295,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1240,8 +1240,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792772914397,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1250,7 +1250,7 @@
   },
   {
    "id": "326ec74c4b",
-   "es": "Era en la mañana.",
+   "es": "Era en la mañana",
    "en": "It was in the morning.",
    "en_source": "auto",
    "added": "2026-10-18",
@@ -1326,7 +1326,7 @@
    "en": "Strive to create a thing",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1504,8 +1504,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481671850,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1552,8 +1552,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481605159,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1566,7 +1566,7 @@
    "en": "Billing (invoicing) – lack(s)",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1626,17 +1626,17 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "To filter",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1792773055965
     }
    }
   },
   {
    "id": "1934376163",
    "es": "frijoles",
-   "en": "Beans",
-   "en_source": "source",
+   "en": "beans",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -1662,7 +1662,7 @@
    "en": "Forest fruits - berries",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1696,8 +1696,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773561208,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1706,7 +1706,7 @@
   },
   {
    "id": "93155e8a5a",
-   "es": "fueron muy amables.",
+   "es": "fueron muy amables",
    "en": "They were very kind.",
    "en_source": "auto",
    "added": "2026-10-18",
@@ -1744,8 +1744,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773115484,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1782,7 +1782,7 @@
    "en": "Plot twist",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1864,8 +1864,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "learned",
+     "level_updated": 1792773355156,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -1878,7 +1878,7 @@
    "en": "There is the perception",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1923,8 +1923,8 @@
   {
    "id": "a058224428",
    "es": "Hayas, tengas, vayas, sea",
-   "en": "subjuntivo (sentimientos - emociones, recomendaciones, deseos)",
-   "en_source": "source",
+   "en": "beech, have, go, be",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -1950,7 +1950,7 @@
    "en": "I have put --> I have put",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -1998,7 +1998,7 @@
    "en": "We would have been best friends if we hadn't lived together. It was very dirty or disorganized. He was immature",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2094,7 +2094,7 @@
    "en": "installed",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2118,7 +2118,7 @@
    "en": "the dragon house",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2166,7 +2166,7 @@
    "en": "Technology makes us less human - the use of artificial intelligence",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2296,8 +2296,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792480470410,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -2358,7 +2358,7 @@
    "en": "The videos give the m",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2379,8 +2379,8 @@
   {
    "id": "6384636650",
    "es": "Luego, entonces, después",
-   "en": "Then",
-   "en_source": "source",
+   "en": "Then, then, after",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -2392,8 +2392,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "learned",
+     "level_updated": 1792773258553,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -2474,7 +2474,7 @@
   },
   {
    "id": "72032b493d",
-   "es": "Me siento mal - Pues, siéntese bien",
+   "es": "Me siento mal, Pues, siéntese bien",
    "en": "I feel bad - Well, sit well",
    "en_source": "auto",
    "added": "2026-10-18",
@@ -2598,7 +2598,7 @@
    "en": "My classes about London were about... friendly, warm. The days or schedules are shorter/shorter",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2643,8 +2643,8 @@
   {
    "id": "e9ca7b6666",
    "es": "Morirse",
-   "en": "to die / Se muere",
-   "en_source": "source",
+   "en": "die",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -2670,7 +2670,7 @@
    "en": "Motivation and information",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2766,7 +2766,7 @@
    "en": "They don't make sense to me",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2790,7 +2790,7 @@
    "en": "I don't care about your opinion / it's not relevant",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -2979,7 +2979,7 @@
   {
    "id": "a3496b4e84",
    "es": "O sea",
-   "en": "I mean; pues;",
+   "en": "I mean",
    "en_source": "source",
    "added": "2026-10-18",
    "active": true,
@@ -3016,8 +3016,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481677353,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3054,7 +3054,7 @@
    "en": "To let loose a little. To lose shyness",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3174,7 +3174,7 @@
    "en": "I thought I was going to eat pizza every day.",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3198,7 +3198,7 @@
    "en": "por - para",
    "en_source": "source",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3222,7 +3222,7 @@
    "en": "Imperfect tense: knew (know)",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3232,8 +3232,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773424499,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3366,7 +3366,7 @@
    "en": "It could be very good / it could be very good",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3414,7 +3414,7 @@
    "en": "What would have happened if the king had had a son?",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3438,7 +3438,7 @@
    "en": "What would have been if I had met you before - Past pluperfect subjunctive",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3472,8 +3472,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481874680,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3486,7 +3486,7 @@
    "en": "Reign - Kingdom",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3582,7 +3582,7 @@
    "en": "They realize - they realized",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3666,9 +3666,9 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "To Separate",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1792773132162
     }
    }
   },
@@ -3726,7 +3726,7 @@
    "en": "Switzerland - Sweden",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3774,7 +3774,7 @@
    "en": "Switzerland - Sweden",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3808,8 +3808,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773391174,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3822,7 +3822,7 @@
    "en": "Keyboard - keyboard",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3846,7 +3846,7 @@
    "en": "We have the memory of a chicken - a fish",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3904,8 +3904,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773450579,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3942,7 +3942,7 @@
    "en": "A knight of the seven kingdoms",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -3952,8 +3952,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "learned",
+     "level_updated": 1792481727904,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3976,8 +3976,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481205281,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -3990,7 +3990,7 @@
    "en": "a black holo",
    "en_source": "auto",
    "added": "2026-10-18",
-   "active": true,
+   "active": false,
    "modes": {
     "es": {
      "level": "frequent",
@@ -4072,8 +4072,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792481860098,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -4107,8 +4107,8 @@
   {
    "id": "e67661e135",
    "es": "Villano",
-   "en": "Villane",
-   "en_source": "source",
+   "en": "Villain",
+   "en_source": "auto",
    "added": "2026-10-18",
    "active": true,
    "modes": {
@@ -4144,8 +4144,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1792773495146,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -4155,7 +4155,7 @@
   {
    "id": "e5fa26a518",
    "es": "Ya tienes terreno ganado",
-   "en": "you're step ahead",
+   "en": "you're a step ahead",
    "en_source": "source",
    "added": "2026-10-18",
    "active": true,
@@ -4218,9 +4218,9 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "Find, as in how was it for you?",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1792481343510
     }
    }
   },
@@ -4230,6 +4230,4470 @@
    "en": "He is very mean to the woman the gentleman likes - When we refer to him or her we use le",
    "en_source": "auto",
    "added": "2026-10-18",
+   "active": false,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "25dbdf7d7a",
+   "es": "A excepción de",
+   "en": "Except for",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1163d6aa54",
+   "es": "A mi enemigo le gustaban mucho las redes sociales.",
+   "en": "My enemy really liked social media.",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "00adf3003f",
+   "es": "A mí me encanta la tela de tu falda, es muy suave.",
+   "en": "I love the fabric of your skirt, it's very soft.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "dbbf16c521",
+   "es": "a pesar de que",
+   "en": "even though",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "3be9db8449",
+   "es": "Acogíamos a los nuevos jugadores",
+   "en": "We welcomed new players",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "53588240f9",
+   "es": "Adictos",
+   "en": "Addicts",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "infrequent",
+     "level_updated": 1792516094237,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "aa7fad0454",
+   "es": "Al llegar a casa, yo me preparé un café.",
+   "en": "When I got home, I prepared myself a coffee.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "decfe09552",
+   "es": "aprobar",
+   "en": "to pass (an exam)",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "026b6a67b9",
+   "es": "araña",
+   "en": "spider",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8db5178b33",
+   "es": "ascenso",
+   "en": "promotion",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "752b40607e",
+   "es": "atleta",
+   "en": "athlete",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "41b82a96af",
+   "es": "barrer",
+   "en": "to sweep",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "09e7c8050a",
+   "es": "basurero",
+   "en": "wastebasket",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "cdb40ae519",
+   "es": "brocha",
+   "en": "paintbrush",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "2c41b1147b",
+   "es": "Calmada",
+   "en": "calm",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "infrequent",
+     "level_updated": 1792479061523,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "f434c25280",
+   "es": "Cancelé la entrega por el costo.",
+   "en": "I canceled the delivery because of the cost.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "45ba007619",
+   "es": "carpeta",
+   "en": "folder",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "5aa8591665",
+   "es": "Colegas",
+   "en": "Colleagues",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "3f6460778f",
+   "es": "con todo lo malo inclusive",
+   "en": "even with all the bad things",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "fcff4b7fdb",
+   "es": "criar",
+   "en": "to raise (children/animals)",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "548c22e7f4",
+   "es": "Cuando estás acá no te dan ganas de irte.",
+   "en": "Once you're here, you don't want to leave.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "3cdf4521c2",
+   "es": "Cuando nos referimos a él o ella usamos le",
+   "en": "When we refer to him or her we use le",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c50887fc4c",
+   "es": "Cuando planchaba la ropa, me quemé.",
+   "en": "When I was ironing the clothes, I burned myself.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "004b8594ae",
+   "es": "Cuando te encuentras con una persona y la saludas, dices: \"Buenos días, ¿cómo estás?",
+   "en": "When you meet a person and greet them, you say: \"Good morning, how are you?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "df5d2b226a",
+   "es": "De lunes a viernes, me despierto a las seis.",
+   "en": "From Monday to Friday, I wake up at six.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "193503cc49",
+   "es": "Debería haber dos libros más",
+   "en": "There should be two more books",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1d6ccb4013",
+   "es": "Defensor",
+   "en": "Advocate",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "4505427ff6",
+   "es": "dejar algo por la mitad",
+   "en": "to leave something half done",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "31a9fdfdc6",
+   "es": "Delgado",
+   "en": "slim",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "df9404391c",
+   "es": "Diles a todos tu nombre.",
+   "en": "Tell everyone your name.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9518893be2",
+   "es": "Dígale que no es su mapa.",
+   "en": "Tell him that it's not his map.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e85748ffa9",
+   "es": "El doctor le está dando las pastillas, pero no le gusta esa medicina.",
+   "en": "The doctor's giving her pills, but she doesn't like that medicine.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1655b4abf7",
+   "es": "El traductor lleva una hora leyendo.",
+   "en": "The translator has been reading for an hour.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "342fdbe105",
+   "es": "Empezaré por esto.",
+   "en": "I'll start with this.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "39a479aace",
+   "es": "En algunos países, hay elecciones cada cinco años.",
+   "en": "In some countries, there are elections every five years.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "ea41bf96d4",
+   "es": "En realidad es tonto.",
+   "en": "It's actually silly.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "eb7c1414ce",
+   "es": "En su lugar, yo compraría joyas.",
+   "en": "If I were her, I would buy jewelry.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "93bc3f6c06",
+   "es": "En verano, los árboles tendrían hojas de muchos colores.",
+   "en": "In summer, the trees would have leaves of many colors.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "f01afc15b9",
+   "es": "Envíeselas a sus padres, ¿me explico?",
+   "en": "Send them to her parents. Does that make sense?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "16b06e0968",
+   "es": "Era muy sucio o desorganizado.",
+   "en": "It was very dirty or disorganized.",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "a011b03cd5",
+   "es": "Esa película italiana dura más de dos horas.",
+   "en": "That Italian movie lasts more than two hours.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "67bf02296f",
+   "es": "escalera",
+   "en": "ladder",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "576dfecefd",
+   "es": "Esforzarme para crear una cosa",
+   "en": "Strive to create a thing",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "21c4f9c022",
+   "es": "Eso suena... interesante.",
+   "en": "That sounds... interesting.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "74488b833e",
+   "es": "Espero que te vaya muy bien esta semana.",
+   "en": "I hope you do very well this week.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e252192ec5",
+   "es": "Estaba muy desconcentrada.",
+   "en": "I was really distracted.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "85cfe174d0",
+   "es": "estar por",
+   "en": "to be about to",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "a8eb9adf51",
+   "es": "Estoy persiguiendo un ascenso.",
+   "en": "I'm chasing a promotion.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "da6837c503",
+   "es": "Estoy por apagar la calefacción.",
+   "en": "I'm about to turn off the heating.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "aed9cf8e94",
+   "es": "Estoy tomando clases de salsa desde febrero.",
+   "en": "I've been taking salsa classes since February.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "076dd68996",
+   "es": "Está ayudándolas a traducir un documento al español.",
+   "en": "He's helping them translate a document into Spanish.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "2ecb9ce6da",
+   "es": "Existe la percepción",
+   "en": "There is the perception",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9a2a0ec1a3",
+   "es": "Explícame por qué no aprobaste, Clara.",
+   "en": "Explain to me why you didn't pass, Clara.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8891506af9",
+   "es": "giro de la trama",
+   "en": "Plot twist",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e18d6aac07",
+   "es": "grifo",
+   "en": "tap (faucet)",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c5fd50819e",
+   "es": "Habría niños valientes y felices por todas partes.",
+   "en": "There would be brave, happy children everywhere.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e819c43500",
+   "es": "Habría televisores gigantes por todas partes.",
+   "en": "There would be giant televisions everywhere.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "74a2f16295",
+   "es": "Hace una hora que comí.",
+   "en": "It's been an hour since I ate.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1af81b6c7c",
+   "es": "Hacemos yoga juntas desde el comienzo del año.",
+   "en": "We've been doing yoga together since the beginning of the year.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "b3ec472ad5",
+   "es": "Haríamos un castillo de arena cerca del mar.",
+   "en": "We would make a sand castle near the sea.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "015b980b89",
+   "es": "Hay que actualizar toda la información de las carpetas.",
+   "en": "One must update all the information in the folders.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "2dbf1f98fc",
+   "es": "he puesto",
+   "en": "I have put",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8c9ff4f069",
+   "es": "Hubiéramos sido mejores amigos si no hubiéramos vivido juntos.",
+   "en": "We would have been best friends if we hadn't lived together.",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c87ba04797",
+   "es": "Junior entra corriendo en el cuarto de Eddy con una brocha y pintura verde en la cara.",
+   "en": "Junior runs into Eddy's room with a paintbrush and green paint on his face.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "761eb9dc52",
+   "es": "Junior, tienes que completar todo el trabajo, no dejarlo por la mitad.",
+   "en": "Junior, you have to finish all the work, not leave it half done.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "f5eede110d",
+   "es": "La mitad del público celebra.",
+   "en": "Half of the crowd is celebrating.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d70fbc90bb",
+   "es": "La neta",
+   "en": "Honestly / the truth is",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": "Mexican slang",
+     "clue_src": "Mexican slang",
+     "clue_updated": 1792845805096
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "bae210708c",
+   "es": "La próxima vez que quieras reconocerme, hazlo en inglés.",
+   "en": "The next time you want to acknowledge me, do it in English.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "44dd127785",
+   "es": "La reunión con el gerente me fue súper bien.",
+   "en": "The meeting with the manager went really well for me.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "3d45cde3c5",
+   "es": "La reunión terminó, pero ellos siguen discutiendo.",
+   "en": "The meeting ended, but they're still arguing.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8f90ebbdf2",
+   "es": "La tecnología nos hace menos humanos",
+   "en": "Technology makes us less human",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "42f9811fbd",
+   "es": "Las jornadas o los horarios son más cortas / cortos",
+   "en": "The days or schedules are shorter/shorter",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "522034face",
+   "es": "Les agradezco su apoyo.",
+   "en": "I thank them for their support.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "59a09f2de7",
+   "es": "Llevan un rato tratando de comunicarse.",
+   "en": "They have been trying to communicate for a while.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c3a0d89536",
+   "es": "Los cocodrilos dirían que son valientes.",
+   "en": "The crocodiles would say that they're brave.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e045f4c2d0",
+   "es": "mancha",
+   "en": "stain",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "ffbe967200",
+   "es": "Me alegra que hayas amanecido bien.",
+   "en": "I'm glad you woke up well.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d23574483a",
+   "es": "Me bajó un poquito la nota.",
+   "en": "It lowered my grade a little.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "af8d1a7d48",
+   "es": "Me confundí mucho.",
+   "en": "I got really confused.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "5971df2c57",
+   "es": "Me encantan los gorros de lana de esta tienda.",
+   "en": "I love this store's wool hats.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "0efdd3e3d0",
+   "es": "Me fue súper mal.",
+   "en": "It went really badly for me.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "048f125cb2",
+   "es": "Mi abuela barría el suelo cinco veces por día.",
+   "en": "My grandmother swept the floor five times per day.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "20bb84d95d",
+   "es": "Mis clases acerca de Londres eran sobre... amigables, cálidas.",
+   "en": "My classes about London were about... friendly, warm.",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "bf9c9a1199",
+   "es": "Motivación",
+   "en": "Motivation",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e3be72d898",
+   "es": "Muy bien, ese es tu punto de vista, pero mi opinión es distinta.",
+   "en": "Very well, that's your point of view, but my opinion is different.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "6eacc52fd7",
+   "es": "Necesita o tener paciencia o irse.",
+   "en": "He needs to either have patience or leave.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1a68bfa345",
+   "es": "Ninguno de ellos mencionó el tema de la inmigración.",
+   "en": "None of them mentioned the topic of immigration.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "11bb484826",
+   "es": "No alcanzo más alto.",
+   "en": "I can't reach any higher.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9c2e702a84",
+   "es": "no es relevante",
+   "en": "not relevant",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8981dfa5eb",
+   "es": "No hay tareas domésticas divertidas.",
+   "en": "There is no fun housework.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1e2996d99a",
+   "es": "No le entendía nada al profe.",
+   "en": "I didn't understand anything the teacher was saying.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "662f9da427",
+   "es": "No los vamos a ver si hacen un viaje.",
+   "en": "We're not going to see them if they go on a trip.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d96b600641",
+   "es": "No me importa el precio si es de buena calidad.",
+   "en": "I don't care about price if it's good quality.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "86d2b46884",
+   "es": "No me importa su opinión",
+   "en": "I don't care about your opinion",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e136d95a17",
+   "es": "No puedo reparar su grifo hoy, ¿se lo reparo mañana?",
+   "en": "I can't fix your tap today; shall I fix it for you tomorrow?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8414c8024d",
+   "es": "No quiero que te pierdas.",
+   "en": "I don't want you to get lost.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "dad61f7289",
+   "es": "No sabría qué transporte podemos tomar hacia allá.",
+   "en": "I wouldn't know what transport we can take to get there.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8959a1d766",
+   "es": "No se equivocan.",
+   "en": "They're not wrong.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d665ff3744",
+   "es": "No tengas miedo, todos los taxistas manejan así.",
+   "en": "Don't be afraid, all taxi drivers drive like this.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "80289f8b71",
+   "es": "No tienen sentido",
+   "en": "They don't make sense",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "b14cedeb31",
+   "es": "No, pero préstame más pintura, por favor. Usé toda en la parte baja.",
+   "en": "No, but lend me more paint, please. I used it all on the lower part.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "7d247d3730",
+   "es": "Para mejorar el sabor de la salsa, ¡ponle un poco de picante!",
+   "en": "To improve the flavour of the sauce, add a bit of spice!",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d0a20cbd6f",
+   "es": "Para perder la timidez",
+   "en": "To lose shyness",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "fd4a146660",
+   "es": "Para soltarse un poco.",
+   "en": "To let loose a little.",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "7f4737cd2e",
+   "es": "Paso más tiempo con mi hijo desde que cambié mi trabajo.",
+   "en": "I've been spending more time with my son since I changed my job.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "427836ead2",
+   "es": "Pensé que iba a comer pizza todos los días.",
+   "en": "I thought I was going to eat pizza every day.",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "203addd5cc",
+   "es": "picante",
+   "en": "spice / spicy",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "76d74157bf",
+   "es": "Pienso que a ti te fue muy bien a pesar de que fue poco tiempo.",
+   "en": "I think you did very well even though it was a short time.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "1e52bf8f8e",
+   "es": "Podrías tener una vida llena de aventuras.",
+   "en": "You would be able to have a life full of adventures.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "af24176bb8",
+   "es": "por ese lado",
+   "en": "in that regard / on that front",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9856044ad1",
+   "es": "Profesor, deles más tarea a los alumnos avanzados.",
+   "en": "Professor, give the advanced students more homework.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "332a2f78fa",
+   "es": "Profesor, lea las instrucciones otra vez, por favor.",
+   "en": "Professor, read the instructions again, please.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9d39b67ded",
+   "es": "Préstame tus apuntes de biología, por favor.",
+   "en": "Lend me your biology notes, please.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "40f9a9e99c",
+   "es": "Puedo llegar donde te quede más cerca.",
+   "en": "I can get to wherever is closest for you.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e5499eae14",
+   "es": "párrafo",
+   "en": "paragraph",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "024e778a8c",
+   "es": "Pídele una hoja a ella.",
+   "en": "Ask her for a sheet (of paper).",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "7c632cd9ba",
+   "es": "saludar",
+   "en": "to greet / to say hello",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e0ba23d790",
+   "es": "Se dan cuenta",
+   "en": "they realized",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "2f02d64849",
+   "es": "Se lo puedo dar mañana, señora.",
+   "en": "I can give it to you tomorrow, ma'am.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "a03c06e3df",
+   "es": "se muere",
+   "en": "dies",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "ca8cd1a1ff",
+   "es": "Seguimos imprimiendo.",
+   "en": "We are still printing.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "7dc322a2c2",
+   "es": "Señor, ¿está la sección de neveras por esa puerta?",
+   "en": "Sir, is the fridge section through that door?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "b1df15b03b",
+   "es": "Señora, pregúntele a mi asistente.",
+   "en": "Ma'am, ask my assistant.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "41a26cc8cd",
+   "es": "Si entiendes qué significa este párrafo, explícamelo.",
+   "en": "If you understand what this paragraph means, explain it to me.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "51062383ca",
+   "es": "Si está estresado, lo quiero ayudar.",
+   "en": "If he's stressed, I want to help him.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "0c6d575df8",
+   "es": "Si me caigo de la cama, me río.",
+   "en": "If I fall off the bed, I laugh.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c903fe743f",
+   "es": "Si me enseñan un error más, voy a gritar.",
+   "en": "If they show me one more mistake, I'm going to scream.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "59b7243a76",
+   "es": "Si no entendiste, pídele ayuda a la maestra.",
+   "en": "If you didn't understand, ask the teacher for help.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d3b8e38bfd",
+   "es": "Si pudiera escoger una palabra que definiera Colombia, es \"acogedor\".",
+   "en": "If I could choose one word to define Colombia, it would be \"welcoming\".",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "3408a63f90",
+   "es": "Si sus alumnos no tienen las notas, envíeselas.",
+   "en": "If your students don't have the grades, send them to them.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "032c6e48db",
+   "es": "Si ya terminaste de usar tu calculadora, préstamela.",
+   "en": "If you already finished using your calculator, lend it to me.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "cdb9b1e1e0",
+   "es": "Suecia",
+   "en": "Sweden",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "77d93cd815",
+   "es": "Suiza",
+   "en": "Swiss",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "773ee7f961",
+   "es": "Surfea tanto como yo porque crecimos en California.",
+   "en": "She surfs as much as I do because we grew up in California.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "0a143e05e5",
+   "es": "Sí, ella ha estado charlando por un tiempo.",
+   "en": "Yes, she's been chatting for a while.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "7d9af3dc45",
+   "es": "Sí, llevo diez años trabajando en esa compañía.",
+   "en": "Yes, I've been working at that company for ten years.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "61d6946aca",
+   "es": "tareas domésticas",
+   "en": "housework / chores",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "aa01b7ef71",
+   "es": "Teclado",
+   "en": "keyboard",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9af1087742",
+   "es": "Tenemos que agradecerle por manejar todo el tiempo.",
+   "en": "We have to thank him for driving all the time.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "0345a74036",
+   "es": "Tengo mi propio negocio.",
+   "en": "I have my own business.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "77f4b453f2",
+   "es": "Tenía una pizza y nos la cocinó.",
+   "en": "He had a pizza, and he cooked it for us.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "6e96e5d10b",
+   "es": "Todo es un proceso.",
+   "en": "Everything is a process.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "f8c2f39c79",
+   "es": "Todos los domingos voy a la playa para relajarme.",
+   "en": "Every Sunday I go to the beach to relax.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "038aed1bbe",
+   "es": "Tu mochila está en la parte de atrás.",
+   "en": "Your backpack is in the back.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "7f2e4f1179",
+   "es": "Un gusto saludarte.",
+   "en": "Nice to meet you (lit. a pleasure to greet you).",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "74d2a19dcf",
+   "es": "Un hoyo negro",
+   "en": "a black hole",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d6b980bb5b",
+   "es": "un rato",
+   "en": "a while",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c202f64e0d",
+   "es": "Usted podría ser el héroe de una novela de aventuras.",
+   "en": "You could be the hero in an adventure novel.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "642ec72f93",
+   "es": "Voy por buen camino.",
+   "en": "I'm on the right track.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "93ca841aaa",
+   "es": "Yo continúo trabajando en la misma empresa.",
+   "en": "I'm still working at the same company.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "76ca5ca181",
+   "es": "¡Ay, no! ¡Ahora tengo una mancha de café en mi camiseta! ¿Cómo se la quitamos?",
+   "en": "Oh, no! Now I have a coffee stain on my T-shirt! How do we remove it?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d4cc91abc6",
+   "es": "¡Es urgente! Estoy llamando a Sofía, pero no contesta.",
+   "en": "It's urgent! I'm calling Sofía, but she isn't answering.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "861f34bdf1",
+   "es": "¡Estoy haciendo un resumen de mis apuntes porque quiero tener una buena nota!",
+   "en": "I'm doing a summary of my notes because I want to get a good grade!",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "2a43b6cb1d",
+   "es": "¡Mi tío ganó la lotería hace dos meses!",
+   "en": "My uncle won the lottery two months ago!",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8af6b08775",
+   "es": "¡Pídele más tiempo al profesor!",
+   "en": "Ask the professor for more time!",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "a58d7865f4",
+   "es": "¡Qué notas tan bajas! ¿Qué hago con esta alumna?",
+   "en": "Such low grades! What do I do with this student?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "18fc657b89",
+   "es": "¿A usted le hicieron fiestas de cumpleaños en su infancia?",
+   "en": "Did they have birthday parties for you in your childhood?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "6ee4e4bcbb",
+   "es": "¿Continuamos hablando sobre el proyecto?",
+   "en": "Should we continue talking about the project?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c17ccdfde9",
+   "es": "¿Cuándo te gustaría que los devolviera?",
+   "en": "When would you like me to return them?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "35cadd07cc",
+   "es": "¿Cuánto hace que estudias idiomas con Duolingo?",
+   "en": "How long have you been studying languages with Duolingo?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c06bbd340e",
+   "es": "¿Cuánto hace que estudias?",
+   "en": "How long have you been studying?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "491af80e56",
+   "es": "¿Cuánto hace que tu primo enseña salsa en esta academia?",
+   "en": "How long has your cousin been teaching salsa at this academy?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "3551dae1c9",
+   "es": "¿Cómo haríamos una ciudad de arena?",
+   "en": "How would we make a city made of sand?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8de50a5cd1",
+   "es": "¿El búho se pondría un traje elegante para ir al teatro?",
+   "en": "Would the owl wear an elegant suit to go to the theater?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "fc5a2f959b",
+   "es": "¿Ellos dónde pusieron los libros?",
+   "en": "Where did they put the books?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "2351b8f8c1",
+   "es": "¿Eso le diría el viento?",
+   "en": "Would the wind say that to him?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c6b4c8f71e",
+   "es": "¿Le dieron la promoción?",
+   "en": "Did they give her the promotion?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "fd6b9deab1",
+   "es": "¿me explico?",
+   "en": "do I make myself clear? / does that make sense?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "6273ad42fe",
+   "es": "¿No leíste ningún artículo sobre la salud pública?",
+   "en": "Didn't you read any articles about public health?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "ffc7c0f93b",
+   "es": "¿No ves las manchas en las paredes?",
+   "en": "Don't you see the stains on the walls?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e89567698d",
+   "es": "¿Por qué no hay ningún debate público sobre este tema?",
+   "en": "Why aren't there any public debates about this topic?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "439f108d7f",
+   "es": "¿Quién contrató al chico que está borrando esos archivos importantes?",
+   "en": "Who hired the boy that's deleting those important files?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "32aff25e49",
+   "es": "¿Qué hace el basurero en medio de la sala?",
+   "en": "What's the wastebasket doing in the middle of the living room?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d9ef67238f",
+   "es": "¿Qué haces para divertirte en tu tiempo libre?",
+   "en": "What do you do to have fun in your free time?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "48c1077c12",
+   "es": "¿Qué harían ustedes con toda la arena del desierto?",
+   "en": "What would you do with all the sand in the desert?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "e0a5918f29",
+   "es": "¿Qué hubiera pasado si el rey hubiera tenido un hijo?",
+   "en": "What would have happened if the king had had a son?",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d89faad1c4",
+   "es": "¿Qué hubiera sido si te hubiera conocido antes?",
+   "en": "What would it have been like if I had met you before?",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "9f062108af",
+   "es": "¿Qué pensaron ustedes del debate de anoche?",
+   "en": "What did you think about last night's debate?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "a66a0f97ba",
+   "es": "¿Qué te importa más, el precio o la calidad?",
+   "en": "What do you care about more, price or quality?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "8ecaa880dc",
+   "es": "¿Sigues trabajando en la misma oficina donde te conocí?",
+   "en": "Are you still working in the same office where I met you?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "c598dbdaf1",
+   "es": "¿Te gusta el gorro de lana que compré para el invierno?",
+   "en": "Do you like the wool hat that I bought for winter?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d7cb6057d8",
+   "es": "¿Usted competiría en un concurso de baile conmigo?",
+   "en": "Would you compete in a dance contest with me?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "d0031736f0",
+   "es": "¿Viste al tipo que repara la impresora? Es un hombre alto con barba.",
+   "en": "Did you see the guy who fixes the printer? He's a tall man with a beard.",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "84462a7a30",
+   "es": "¿Y si mejor yo devuelvo esos pantalones?",
+   "en": "And if I return those pants instead?",
+   "en_source": "source",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "a7964b7317",
+   "es": "Él era inmaduro",
+   "en": "He was immature",
+   "en_source": "auto",
+   "added": "2026-10-24",
+   "active": true,
+   "modes": {
+    "es": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    },
+    "en": {
+     "level": "frequent",
+     "level_updated": 0,
+     "clue": null,
+     "clue_src": null,
+     "clue_updated": 0
+    }
+   }
+  },
+  {
+   "id": "82545b0c25",
+   "es": "Él es muy malo con la mujer que le gusta al caballero",
+   "en": "He is very bad with the woman the gentleman likes",
+   "en_source": "auto",
+   "added": "2026-10-24",
    "active": true,
    "modes": {
     "es": {
