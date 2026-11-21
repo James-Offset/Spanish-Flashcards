@@ -42,9 +42,9 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "Geographic?",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1794424489165
     }
    }
   },
@@ -424,8 +424,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "infrequent",
-     "level_updated": 1792481847990,
+     "level": "learned",
+     "level_updated": 1794424270028,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -520,8 +520,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424143938,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -616,8 +616,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424025145,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -666,9 +666,9 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "Or to have a realisation",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1794424681561
     }
    }
   },
@@ -1624,8 +1624,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424264721,
      "clue": "To filter",
      "clue_src": null,
      "clue_updated": 1792773055965
@@ -4024,8 +4024,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424467421,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -4192,8 +4192,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794423937741,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -4312,8 +4312,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424458984,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -4482,9 +4482,9 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "Like work",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1794423574089
     }
    }
   },
@@ -4890,9 +4890,9 @@
     "en": {
      "level": "frequent",
      "level_updated": 0,
-     "clue": null,
+     "clue": "Or a defender",
      "clue_src": null,
-     "clue_updated": 0
+     "clue_updated": 1794424660443
     }
    }
   },
@@ -6280,8 +6280,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424362613,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -8200,8 +8200,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424102699,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0
@@ -8608,8 +8608,8 @@
      "clue_updated": 0
     },
     "en": {
-     "level": "frequent",
-     "level_updated": 0,
+     "level": "infrequent",
+     "level_updated": 1794424817422,
      "clue": null,
      "clue_src": null,
      "clue_updated": 0

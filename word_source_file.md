@@ -1,3 +1,213 @@
+
+
+
+Suceder = to happen 
+
+
+gratuitas 
+
+
+Independencia 
+
+Galletas
+
+Encendedor 
+
+Amado
+
+Notas 
+apuntes 
+
+mecanismo defensivo 
+
+Premiarse 
+
+Oftalmólogo
+
+Fórmula más leve 
+
+Seguiré teniendo estás gafas 
+
+retardar 
+ralentizar 
+
+renunciaría 
+
+una persona que tenga una posición más alta 
+
+
+Es un arma de doble filo 
+
+Evidencia 
+
+Apoyar 
+
+Fructífero 
+
+Ausente 
+
+Rendimiento 
+
+Habilidades 
+
+ser profesional 
+
+Yo daría prioridad a... 
+
+priorizaría 
+
+equilibrar 
+
+Una solución es que esa persona trabaje en otra habitación 
+
+Corregir 
+
+Cuidado 
+
+Intentar que pare las malas acciones 
+
+Una cultura que priorice 
+
+Culpar 
+
+Retroalimentación 
+
+Contabilidad 
+
+Dar una vuelta
+
+Una relación tan fuerte 
+
+Liderazgo 
+
+¿Qué es ser un buen líder? 
+
+Liderar 
+
+Los valores que se reflejan a tus compañeros
+
+Los valores que demuestras ante tus colegas
+
+Pelea
+
+Gritando 
+
+Presionando 
+
+Infundiendo miedo 
+
+Quería 
+
+Renunció 
+
+Era nuevo en la empresa y en la universidad 
+
+posición en la jerarquía más alta 
+
+Gastarlo 
+
+Contratar 
+
+Disminuir 
+
+Puntos de carga para carros eléctricos
+
+Me permitían hacer lo que quería si no gastaba el dinero 
+
+Renovar el contrato 
+
+Contrato a término indefinido 
+
+Contrato a término fijo 
+
+Vuelo de vuelta 
+
+Era estudiante
+
+¿Por que el hijo no podría haber ido? 
+
+Preferí 
+
+Significado
+
+Pasarías 
+
+Postre
+
+Reflexionar 
+
+Muñecos de nieve 
+
+Cuenta regresiva 
+
+Juegos artificiales 
+
+Objetivos de año nuevo 
+
+Cumplir 
+
+Agüeros 
+
+Añoro 
+
+Cabeza del hogar 
+
+Guacharaca 
+
+Rallador 
+
+Fiabilidad 
+
+Confiabilidad 
+
+Traidores 
+
+Celebridades 
+
+No me gustaría usar algo aterrador 
+
+Disfraz creativo 
+
+Me arrepiento un poco 
+
+A quienes les gustan las fiestas 
+
+A quienes les gusta ir de fiesta 
+
+Voy a revisarlo rápidamente  
+
+Aunque me duela dejaré a Daniela 
+
+Requerimientos = requests 
+
+Browser = navegador 
+
+the Link = el enlace 
+
+Agregar
+
+Actualizar
+
+Camino a casa 
+
+precisión 
+
+Confiables 
+
+Respondemos
+
+Riesgos 
+
+Reemplazar 
+
+Significativa 
+
+Ingeniería 
+
+Habilidad
+
+Dejar
+
 Pantalla = screen 
 
 No te escucho 
